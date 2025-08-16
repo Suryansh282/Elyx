@@ -1,0 +1,6 @@
+<!-- Elyx favicon (simple blue wordmark) -->
+<svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 64 64">
+  <rect width="64" height="64" fill="white" rx="12"/>
+  <text x="32" y="38" text-anchor="middle" font-family="Segoe UI, Roboto, Arial" font-size="28"
+        fill="#2563EB" letter-spacing="3">elyx</text>
+</svg>

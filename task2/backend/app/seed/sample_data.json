@@ -1,0 +1,156 @@
+{
+  "member": { "id": 1, "name": "MEMBER_NAME" },
+  "chats": [
+    {"id": 1, "date": "2025-04-25", "sender": "member", "text": "Concern about high intensity minutes on Garmin due to POTS/long COVID."},
+    {"id": 2, "date": "2025-04-25", "sender": "elyx", "text": "Acknowledged concern; doctor will review your case."},
+    {"id": 3, "date": "2025-04-28", "sender": "elyx", "text": "Post-onboarding plan: Lifestyle Consultation with Dr Advik."},
+    {"id": 4, "date": "2025-04-26", "sender": "member", "text": "My current health management feels random and uncoordinated."},
+    {"id": 5, "date": "2025-05-03", "sender": "member", "text": "About '3x 150 mins'—what does it mean?"},
+    {"id": 6, "date": "2025-05-04", "sender": "elyx", "text": "Requesting access to past cardiology records."},
+    {"id": 7, "date": "2025-05-08", "sender": "member", "text": "Can't access the workout plan—password issue."},
+    {"id": 8, "date": "2025-05-05", "sender": "doctor", "text": "We will investigate high intensity minutes further."},
+    {"id": 9, "date": "2025-05-12", "sender": "coach", "text": "Shared hotel gym workout plan."},
+    {"id": 10, "date": "2025-05-13", "sender": "member", "text": "After a month, no tangible impact; service feels sluggish."},
+    {"id": 11, "date": "2025-05-13", "sender": "member", "text": "You should track if I've been to the gym."},
+    {"id": 12, "date": "2025-05-13", "sender": "elyx", "text": "Clarifying founder vs customer comments; WhatsApp vs Slack?"},
+    {"id": 13, "date": "2025-05-14", "sender": "elyx", "text": "We are consolidating the plan and priorities."},
+    {"id": 14, "date": "2025-05-15", "sender": "member", "text": "Plan lacks prioritization and why behind recommendations."},
+    {"id": 15, "date": "2025-05-20", "sender": "member", "text": "Workout was scheduled at wrong time; I missed it."},
+    {"id": 16, "date": "2025-05-24", "sender": "member", "text": "Workout invitations lack context of goals and metrics."}
+  ],
+  "episodes": [
+    {
+      "id": 1,
+      "title": "Episode 1: Initial Health Inquiry & Onboarding",
+      "start_date": "2025-04-25",
+      "end_date": "2025-04-28",
+      "goal": "Address high intensity minutes (Garmin) with POTS/long COVID.",
+      "triggered_by": "Member",
+      "outcome": "Information provided & plan proposed (Lifestyle Consultation).",
+      "persona_before": "Proactive and data-driven; feels management is random/uncoordinated. [4]",
+      "persona_after": "Engaged with Elyx, shared data; awaiting consultation. [2][3]",
+      "response_time_minutes": 25,
+      "time_to_resolution_minutes": 3,
+      "friction_points": [],
+      "decisions": [
+        {
+          "id": 101,
+          "title": "Lifestyle Consultation with Dr Advik",
+          "date": "2025-04-28",
+          "description": "First step to review lifestyle factors and POTS context.",
+          "reasons": [
+            { "text": "Member concern about high intensity minutes.", "evidence_ids": [1] },
+            { "text": "Team acknowledged and proposed a plan.", "evidence_ids": [2,3] }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "title": "Episode 2: Clarification, Data Gathering & Initial Workout Plan",
+      "start_date": "2025-05-03",
+      "end_date": "2025-05-12",
+      "goal": "Clarify intensity targets, gather medical records, share workout plan.",
+      "triggered_by": "Member & Elyx Concierge",
+      "outcome": "Information provided; plan in motion (records + hotel gym plan).",
+      "persona_before": "Engaged; awaiting consultation.",
+      "persona_after": "More involved; starting to hit friction (communication, accessibility).",
+      "response_time_minutes": 182, 
+      "time_to_resolution_minutes": 12960,
+      "friction_points": [
+        "Had to ask who is messaging (concierge number). [5]",
+        "Requested access to past medical records. [6]",
+        "Workout plan behind password. [7]"
+      ],
+      "decisions": [
+        {
+          "id": 201,
+          "title": "Collect Past Medical Records",
+          "date": "2025-05-04",
+          "description": "Needed cardiology history to contextualize intensity minutes.",
+          "reasons": [
+            { "text": "Records requested by Elyx.", "evidence_ids": [6] }
+          ]
+        },
+        {
+          "id": 202,
+          "title": "Hotel Gym Workout Plan",
+          "date": "2025-05-12",
+          "description": "Provide accessible workouts while traveling.",
+          "reasons": [
+            { "text": "Acknowledge high intensity minute issue (doctor).", "evidence_ids": [8] },
+            { "text": "Coach delivered the plan.", "evidence_ids": [9] }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "title": "Episode 3: Member Dissatisfaction & Service Feedback",
+      "start_date": "2025-05-13",
+      "end_date": "2025-05-14",
+      "goal": "Capture dissatisfaction and commit improvements.",
+      "triggered_by": "Member",
+      "outcome": "Acknowledgment & promise to improve; consolidate plan.",
+      "persona_before": "Involved but frustrated by friction.",
+      "persona_after": "Frustrated; taking directive role with explicit feedback.",
+      "response_time_minutes": 2252,
+      "time_to_resolution_minutes": 1528,
+      "friction_points": [
+        "Perceived inaction and sluggish service. [10]",
+        "Expect proactivity in tracking activity levels. [11]",
+        "Confusion over communication channel. [12]"
+      ],
+      "decisions": [
+        {
+          "id": 301,
+          "title": "Consolidated Plan & Priorities",
+          "date": "2025-05-14",
+          "description": "Neel to consolidate ongoing work into clear plan.",
+          "reasons": [
+            { "text": "Member's strong feedback on sluggish progress.", "evidence_ids": [10,11] },
+            { "text": "Commitment to consolidate plan.", "evidence_ids": [13] }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "title": "Episode 4: Health Optimization Plan & Continued Feedback",
+      "start_date": "2025-05-15",
+      "end_date": "2025-05-24",
+      "goal": "Provide optimization plan and iterate with feedback.",
+      "triggered_by": "Elyx Concierge & Member",
+      "outcome": "Ongoing adjustments.",
+      "persona_before": "Frustrated with execution.",
+      "persona_after": "Continues to give critical feedback; seeking clarity and context.",
+      "response_time_minutes": 120, 
+      "time_to_resolution_minutes": 12960,
+      "friction_points": [
+        "Plan not comprehensive; lacks prioritization and 'why'. [14]",
+        "Workout scheduled without time preference; missed session. [15]",
+        "Invitations lack context about goals/metrics. [16]"
+      ],
+      "decisions": [
+        {
+          "id": 401,
+          "title": "Health Optimization Plan",
+          "date": "2025-05-15",
+          "description": "Deliver plan; improve clarity on 'why' and priorities.",
+          "reasons": [
+            { "text": "Member flagged lack of prioritization/why.", "evidence_ids": [14] }
+          ]
+        }
+      ]
+    }
+  ],
+  "staff_activities": [
+    {"date": "2025-04-26", "role": "doctor", "hours": 1.5},
+    {"date": "2025-04-28", "role": "doctor", "hours": 0.5},
+    {"date": "2025-05-05", "role": "doctor", "hours": 1.0},
+    {"date": "2025-05-10", "role": "coach", "hours": 1.0},
+    {"date": "2025-05-12", "role": "coach", "hours": 0.75},
+    {"date": "2025-05-14", "role": "doctor", "hours": 0.5},
+    {"date": "2025-05-20", "role": "coach", "hours": 1.0}
+  ]
+}

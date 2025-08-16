@@ -1,0 +1,35 @@
+:root{
+  --bg:#0b1220; --card:#121b2e; --muted:#a7b3cf; --accent:#61dafb;
+  --border:#203056;
+}
+*{box-sizing:border-box}
+body{margin:0;font-family:ui-sans-serif,system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial;background:var(--bg);color:#fff}
+.container{max-width:1200px;margin:0 auto;padding:16px}
+
+/* Branding header */
+.header{display:flex;justify-content:space-between;align-items:center;margin-bottom:12px;gap:16px}
+.brand{display:flex;align-items:center;gap:12px}
+.logo{width:44px;height:44px;border-radius:8px;box-shadow:0 2px 12px rgba(0,0,0,.25)}
+.title{margin:0;font-size:32px;line-height:1.15}
+.tagline{color:var(--muted);font-size:14px;margin-top:2px}
+
+/* Cards & layout */
+.card{background:var(--card);border-radius:16px;padding:16px;box-shadow:0 4px 24px rgba(0,0,0,.25)}
+.grid{display:grid;grid-template-columns:2fr 1fr;gap:16px}
+.row{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-top:16px}
+.badge{background:#1c2742;padding:4px 10px;border-radius:999px;color:#a7b3cf;font-size:12px}
+.btn{background:#1e2a44;border:0;padding:10px 14px;color:#cfe3ff;border-radius:10px;cursor:pointer}
+.input,.textarea{width:100%;background:#0e1424;color:#dbe7ff;border:1px solid var(--border);border-radius:10px;padding:10px}
+.textarea{min-height:80px}
+.kpi{display:flex;gap:16px;flex-wrap:wrap}
+.kpi .item{background:#0f1930;padding:12px 16px;border-radius:12px;min-width:160px}
+.code{white-space:pre-wrap;background:#0f1320;border-radius:10px;padding:12px;border:1px solid var(--border)}
+
+/* Timeline (horizontal only, labels on hover above) */
+.timeline{display:flex;gap:12px;align-items:center;overflow-x:auto;overflow-y:hidden;white-space:nowrap;padding:8px 0 12px;min-height:48px}
+.timeline::-webkit-scrollbar{height:8px;width:0}
+.timeline::-webkit-scrollbar-thumb{background:#24324b;border-radius:8px}
+.dot{width:16px;height:16px;border-radius:50%;background:#33415c;cursor:pointer;position:relative;flex:0 0 auto}
+.dot.active{background:var(--accent);box-shadow:0 0 0 4px rgba(97,218,251,.2)}
+.dot::after{content:attr(data-label);position:absolute;top:-36px;left:50%;transform:translateX(-50%);background:#0f1930;color:#cfe3ff;border:1px solid var(--border);padding:4px 8px;border-radius:8px;font-size:12px;white-space:nowrap;opacity:0;pointer-events:none;z-index:10;transition:opacity .12s ease, transform .12s ease}
+.dot:hover::after{opacity:1;transform:translateX(-50%) translateY(-2px)}
