@@ -1,0 +1,7 @@
+# Optional seed/config file if you prefer to keep parameters outside code.
+# Currently not consumed by the generator, but provided for future extensions.
+
+random_seed: 42
+start_date: 2025-01-06
+weeks: 34
+timezone: Asia/Singapore
