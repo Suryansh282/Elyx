@@ -201,7 +201,7 @@ Short, label-free, human tone.
 
 ## License
 
-See `LICENSE` in your repository. Add one if missing.
+
 
 ---
 
